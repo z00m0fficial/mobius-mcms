@@ -1,0 +1,17 @@
+repository: mobius-mcms
+version: 1.0.0
+status: foundation
+layer: governance
+department: MCMS
+service: Change Management System
+mission: Track approved platform changes and repository synchronization.
+capabilities:
+  - change_proposals
+  - repository_impact
+  - sync_status
+  - pending_work
+  - memory_records
+  - metric_records
+quality_gates:
+  sync_report_required: true
+  pending_work_reported: true
