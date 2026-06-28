@@ -1,0 +1,26 @@
+mobius:
+  repository: mobius-mcms
+  department: MCMS
+  domain: Governance
+  service: Change Management System
+  canon_version: pending-mobius-canon
+  architecture_version: 1.0.0
+  sync_status: synchronized
+  consumes:
+    - approvals
+    - platform-change-proposals
+    - repository-manifests
+    - architecture-updates
+  produces:
+    - sync-reports
+    - repository-impact-reports
+    - pending-work-reports
+    - change-records
+  depends_on:
+    - mobius-docs
+    - mobius-memory
+    - mobius-pulse
+  governance:
+    approval_workflow: true
+    propagation_required: true
+    pending_work_reporting_required: true
